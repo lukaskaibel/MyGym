@@ -9,27 +9,43 @@
 /* Begin PBXBuildFile section */
 		80D37264251616BA00861743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D37263251616BA00861743 /* AppDelegate.swift */; };
 		80D37266251616BA00861743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D37265251616BA00861743 /* SceneDelegate.swift */; };
-		80D37268251616BA00861743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D37267251616BA00861743 /* ViewController.swift */; };
 		80D3726B251616BA00861743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D37269251616BA00861743 /* Main.storyboard */; };
 		80D3726E251616BA00861743 /* MyGym.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80D3726C251616BA00861743 /* MyGym.xcdatamodeld */; };
 		80D37270251616BB00861743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D3726F251616BB00861743 /* Assets.xcassets */; };
 		80D37273251616BB00861743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D37271251616BB00861743 /* LaunchScreen.storyboard */; };
-		80D3727C251618C300861743 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3727B251618C300861743 /* test.swift */; };
-		A0F9A00B25161EA30069B665 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F9A00A25161EA30069B665 /* test2.swift */; };
+		80D3728225161FD100861743 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3728125161FD100861743 /* Exercise.swift */; };
+		80D372862516207C00861743 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D372852516207C00861743 /* Workout.swift */; };
+		80D3728A251623EF00861743 /* TestWorkouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D37289251623EF00861743 /* TestWorkouts.swift */; };
+		80D3728E251629B800861743 /* WorkoutDiagrammView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3728D251629B800861743 /* WorkoutDiagrammView.swift */; };
+		80D3729125162B6A00861743 /* WorkoutFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3729025162B6A00861743 /* WorkoutFeedCell.swift */; };
+		80D3729F25162F1A00861743 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3729E25162F1A00861743 /* FeedViewController.swift */; };
+		80D372A32516356F00861743 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D372A22516356F00861743 /* User.swift */; };
+		80D372A72516384200861743 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D372A62516384200861743 /* Post.swift */; };
+		80D372AA25163C5A00861743 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D372A925163C5A00861743 /* AddPostViewController.swift */; };
+		80D372B1251646CC00861743 /* SelectWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D372B0251646CC00861743 /* SelectWorkoutTableViewCell.swift */; };
+		80D372BA2516497E00861743 /* WorkoutSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D372B92516497E00861743 /* WorkoutSelectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80D37260251616BA00861743 /* MyGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D37263251616BA00861743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80D37265251616BA00861743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80D37267251616BA00861743 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80D3726A251616BA00861743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80D3726D251616BA00861743 /* MyGym.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyGym.xcdatamodel; sourceTree = "<group>"; };
 		80D3726F251616BB00861743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D37272251616BB00861743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80D37274251616BB00861743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80D3727B251618C300861743 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		A0F9A00A25161EA30069B665 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
+		80D3728125161FD100861743 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		80D372852516207C00861743 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		80D37289251623EF00861743 /* TestWorkouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWorkouts.swift; sourceTree = "<group>"; };
+		80D3728D251629B800861743 /* WorkoutDiagrammView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDiagrammView.swift; sourceTree = "<group>"; };
+		80D3729025162B6A00861743 /* WorkoutFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFeedCell.swift; sourceTree = "<group>"; };
+		80D3729E25162F1A00861743 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		80D372A22516356F00861743 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		80D372A62516384200861743 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		80D372A925163C5A00861743 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		80D372B0251646CC00861743 /* SelectWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		80D372B92516497E00861743 /* WorkoutSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSelectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +78,42 @@
 		80D37262251616BA00861743 /* MyGym */ = {
 			isa = PBXGroup;
 			children = (
-				80D37263251616BA00861743 /* AppDelegate.swift */,
-				80D37265251616BA00861743 /* SceneDelegate.swift */,
-				80D37267251616BA00861743 /* ViewController.swift */,
+				80D372A22516356F00861743 /* User.swift */,
 				80D37269251616BA00861743 /* Main.storyboard */,
+				80D3728125161FD100861743 /* Exercise.swift */,
+				80D372852516207C00861743 /* Workout.swift */,
+				80D37289251623EF00861743 /* TestWorkouts.swift */,
+				80D372B0251646CC00861743 /* SelectWorkoutTableViewCell.swift */,
+				80D372B92516497E00861743 /* WorkoutSelectionTableViewController.swift */,
+				80D372AD2516463000861743 /* Social Media */,
 				80D3726F251616BB00861743 /* Assets.xcassets */,
-				80D37271251616BB00861743 /* LaunchScreen.storyboard */,
 				80D37274251616BB00861743 /* Info.plist */,
 				80D3726C251616BA00861743 /* MyGym.xcdatamodeld */,
-				80D3727B251618C300861743 /* test.swift */,
-				A0F9A00A25161EA30069B665 /* test2.swift */,
+				80D372842516206000861743 /* Supporting */,
+				80D372A62516384200861743 /* Post.swift */,
 			);
 			path = MyGym;
+			sourceTree = "<group>";
+		};
+		80D372842516206000861743 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				80D37271251616BB00861743 /* LaunchScreen.storyboard */,
+				80D37263251616BA00861743 /* AppDelegate.swift */,
+				80D37265251616BA00861743 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		80D372AD2516463000861743 /* Social Media */ = {
+			isa = PBXGroup;
+			children = (
+				80D372A925163C5A00861743 /* AddPostViewController.swift */,
+				80D3729E25162F1A00861743 /* FeedViewController.swift */,
+				80D3728D251629B800861743 /* WorkoutDiagrammView.swift */,
+				80D3729025162B6A00861743 /* WorkoutFeedCell.swift */,
+			);
+			path = "Social Media";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,12 +186,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D37268251616BA00861743 /* ViewController.swift in Sources */,
+				80D372B1251646CC00861743 /* SelectWorkoutTableViewCell.swift in Sources */,
+				80D3728225161FD100861743 /* Exercise.swift in Sources */,
+				80D372A72516384200861743 /* Post.swift in Sources */,
+				80D3729F25162F1A00861743 /* FeedViewController.swift in Sources */,
 				80D3726E251616BA00861743 /* MyGym.xcdatamodeld in Sources */,
+				80D372AA25163C5A00861743 /* AddPostViewController.swift in Sources */,
 				80D37264251616BA00861743 /* AppDelegate.swift in Sources */,
-				80D3727C251618C300861743 /* test.swift in Sources */,
-				A0F9A00B25161EA30069B665 /* test2.swift in Sources */,
+				80D3728E251629B800861743 /* WorkoutDiagrammView.swift in Sources */,
 				80D37266251616BA00861743 /* SceneDelegate.swift in Sources */,
+				80D3729125162B6A00861743 /* WorkoutFeedCell.swift in Sources */,
+				80D3728A251623EF00861743 /* TestWorkouts.swift in Sources */,
+				80D372A32516356F00861743 /* User.swift in Sources */,
+				80D372BA2516497E00861743 /* WorkoutSelectionTableViewController.swift in Sources */,
+				80D372862516207C00861743 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

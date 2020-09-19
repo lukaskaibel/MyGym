@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PKA-yW-ZDV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -8,81 +8,205 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="iUt-H6-SDh">
+        <!--Add Post-->
+        <scene sceneID="d5e-xP-imT">
             <objects>
-                <viewController id="q1X-Kd-raF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bhS-8G-ceg">
+                <viewController id="dHM-M6-6yl" customClass="AddPostViewController" customModule="MyGym" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ssH-7d-L8O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Sfd-fp-srT"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q0l-fv-X9y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="651"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="User Workout Cell" textLabel="eTg-Pe-JqI" style="IBUITableViewCellStyleDefault" id="ozH-58-0VS">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ozH-58-0VS" id="1LO-SJ-SVM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eTg-Pe-JqI">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7S-1Q-Efe">
+                                <rect key="frame" x="158" y="725" width="99" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Submit "/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1aQ-M3-0Gd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Add Post" selectedImage="plus.app" catalog="system" id="W0H-gy-7xp"/>
+                    <connections>
+                        <outlet property="tableView" destination="q0l-fv-X9y" id="NpG-HE-YSU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VpO-KM-hNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evi-a7-eOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-696" y="239"/>
+            <point key="canvasLocation" x="712" y="-280"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="BFb-qq-l3b">
+        <!--My Workouts-->
+        <scene sceneID="aAl-L0-2aB">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="yRT-in-UBC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y6u-8l-RIS">
+                <tableViewController id="Vl5-Ti-W5q" customClass="WorkoutSelectionTableViewController" customModule="MyGym" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DXh-FW-VNj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eVD-Yn-CMa">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Workout Selection Cell" rowHeight="72" id="fy1-Fz-QUw" customClass="SelectWorkoutTableViewCell" customModule="MyGym" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eVD-Yn-CMa" id="d46-h2-2NB">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fy1-Fz-QUw" id="0Gb-th-nDx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="yRT-in-UBC" id="hMa-PX-9I2"/>
-                            <outlet property="delegate" destination="yRT-in-UBC" id="H7K-EN-b0d"/>
+                            <outlet property="dataSource" destination="Vl5-Ti-W5q" id="rUp-y4-qPK"/>
+                            <outlet property="delegate" destination="Vl5-Ti-W5q" id="Foa-Rj-W1P"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="bWr-uC-TOc"/>
+                    <navigationItem key="navigationItem" title="My Workouts" id="s6e-r9-ZYo"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hvy-iX-36L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Db6-jx-0Tv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="-366"/>
+            <point key="canvasLocation" x="555" y="548"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qRA-PR-w1c">
+        <!--Item-->
+        <scene sceneID="cpp-pV-G2r">
             <objects>
-                <navigationController id="qUy-3Q-3RV" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hhP-La-tQ6">
+                <navigationController id="GGK-pV-FHf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2Uc-A4-A1d"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nZP-Wa-P6h">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="yRT-in-UBC" kind="relationship" relationship="rootViewController" id="Dyz-1X-cCF"/>
+                        <segue destination="Vl5-Ti-W5q" kind="relationship" relationship="rootViewController" id="7uL-Rf-xf2"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t0J-ay-GA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0I-os-Oan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-696" y="-366"/>
+            <point key="canvasLocation" x="-342" y="548"/>
         </scene>
-        <!--Split View Controller-->
-        <scene sceneID="vqh-lw-fWV">
+        <!--Item 1-->
+        <scene sceneID="Ckr-6C-ZSx">
             <objects>
-                <splitViewController allowDoubleColumnStyle="YES" id="mgA-oe-592" sceneMemberID="viewController">
+                <viewController id="BUY-6b-YVT" customClass="FeedViewController" customModule="MyGym" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4tG-b6-yrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-jG-ngt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="MyGym" id="t3e-IK-gtL"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cg1-WO-scK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Feed Cell" rowHeight="518" id="tpk-w4-4zt" customClass="WorkoutFeedCell" customModule="MyGym" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="518"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tpk-w4-4zt" id="g6L-oL-M9g" customClass="WorkoutFeedCell" customModule="MyGym" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="518"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frm-nA-SQP">
+                                                    <rect key="frame" x="9" y="11" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxI-yX-PLJ">
+                                                    <rect key="frame" x="80" y="17" width="168" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeW-ct-krH">
+                                                    <rect key="frame" x="80" y="40" width="146" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppa-2a-MyN" customClass="WorkoutDiagrammView" customModule="MyGym" customModuleProvider="target">
+                                                    <rect key="frame" x="87" y="143" width="239" height="233"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="locationLabel" destination="PeW-ct-krH" id="Ybh-up-cKY"/>
+                                            <outlet property="userImage" destination="frm-nA-SQP" id="f4V-vg-of6"/>
+                                            <outlet property="usernameLabel" destination="jxI-yX-PLJ" id="ssd-Ci-zj3"/>
+                                            <outlet property="workoutDiagrammView" destination="ppa-2a-MyN" id="Zru-Ud-DL6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NyG-MB-dKd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cg1-WO-scK" firstAttribute="leading" secondItem="NyG-MB-dKd" secondAttribute="leading" id="Prw-dp-2Rz"/>
+                            <constraint firstItem="NyG-MB-dKd" firstAttribute="trailing" secondItem="cg1-WO-scK" secondAttribute="trailing" id="YZF-rW-BZH"/>
+                            <constraint firstItem="cg1-WO-scK" firstAttribute="top" secondItem="NyG-MB-dKd" secondAttribute="top" constant="44" id="fcR-rY-Qju"/>
+                            <constraint firstItem="NyG-MB-dKd" firstAttribute="trailing" secondItem="g6k-jG-ngt" secondAttribute="trailing" id="k7x-Z7-WzF"/>
+                            <constraint firstItem="NyG-MB-dKd" firstAttribute="bottom" secondItem="cg1-WO-scK" secondAttribute="bottom" id="yG2-fr-Vzj"/>
+                            <constraint firstItem="g6k-jG-ngt" firstAttribute="top" secondItem="NyG-MB-dKd" secondAttribute="top" id="z77-7Y-hUu"/>
+                            <constraint firstItem="g6k-jG-ngt" firstAttribute="leading" secondItem="NyG-MB-dKd" secondAttribute="leading" id="zRm-Pv-dwy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="eLy-fd-RRm"/>
                     <connections>
-                        <segue destination="qUy-3Q-3RV" kind="relationship" relationship="masterViewController" id="IIn-0O-IcQ"/>
-                        <segue destination="q1X-Kd-raF" kind="relationship" relationship="detailViewController" id="em3-TP-vJB"/>
+                        <outlet property="tableView" destination="cg1-WO-scK" id="0pL-aR-9Bp"/>
                     </connections>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OPC-7N-End" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rg6-Qh-Ock" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1587" y="-62"/>
+            <point key="canvasLocation" x="-126.08695652173914" y="-300"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="POZ-UP-7Zx">
+            <objects>
+                <tabBarController id="PKA-yW-ZDV" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MGD-Il-EN4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BUY-6b-YVT" kind="relationship" relationship="viewControllers" id="ahX-FP-jiZ"/>
+                        <segue destination="dHM-M6-6yl" kind="relationship" relationship="viewControllers" id="cyb-Ud-cFS"/>
+                        <segue destination="GGK-pV-FHf" kind="relationship" relationship="viewControllers" id="fq0-Bo-gYx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSA-0z-oUy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="-14"/>
         </scene>
     </scenes>
     <resources>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
