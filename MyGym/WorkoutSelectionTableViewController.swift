@@ -37,7 +37,9 @@ class WorkoutSelectionTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Workout Selection Cell", for: indexPath) as! SelectWorkoutTableViewCell
-
+        
+        cell.textLabel!.text = user.workoutlist[indexPath.row].name
+        
         cell.layer.cornerRadius = 8.0
         cell.layer.shadowOffset = CGSize(width: 3, height: 3)
         cell.layer.shadowColor = UIColor.black.cgColor
